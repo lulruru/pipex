@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: russelenc <russelenc@student.42.fr>        +#+  +:+       +#+         #
+#    By: rencarna <rencarna@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/20 13:02:30 by russelenc         #+#    #+#              #
-#    Updated: 2023/04/26 11:35:47 by russelenc        ###   ########.fr        #
+#    Updated: 2023/05/02 13:56:58 by rencarna         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,7 +42,7 @@ CHECK_SRCS = $(addprefix $(SRC_DIR)/, $(CHECK_SRC))
  #compil
 CFLAGS =  -Wall -Werror -Wextra
 CC = cc
-GCC = gcc
+GCC = gcc -Wall -Werror -Wextra -g3
 
 
 all: $(NAME)
